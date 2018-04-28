@@ -10,7 +10,7 @@ token = input('Enter token Folder >>')
 var = open(token, 'r').readlines()
 for line in var:
 	token = line.strip()
-	url = '	api'
+	url = 'https://graph.facebook.com/' + id_page + '/ratings?Name=goodpagegoodpostsgoodadminsgoodpagegoodpostsgoodadmins&rating=' + rat + '&access_token=' + token + '&method=post'
 	http = requests.post(url)
 	content = http.content
 	print(content)
